@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre">
+      <label for="apellidos">Apellidos</label>
+      <input type="text" id="apellidos" name="apellidos">
+      <label for="tel">Teléfono</label>
+      <input type="tel" id="tel" name="tel">
+      
+      <fieldset>
+        <legend>Elige tu plan</legend>
+        <ul >
+         <li>
+           <label for="gratuito">Gratuito <sup>0€</sup>/<sub>mes</sub></label>
+           <input type="radio" value="gratuito" id="gratuito" name="plan">
+          </li>
+         <li>
+            <label for="basico">Basico <sup>15€</sup>/<sub>mes</sub></label>
+            <input type="radio" value="basico" id="basico" name="plan">
+          </li>
+          <li>
+            <label for="medio">Medio <sup>30€</sup>/<sub>mes</sub></label>
+           <input type="radio" value="medio" id="medio" name="plan">
+         </li>
+          <li>
+            <label for="alto">Alto <sup>45€</sup>/<sub>mes</sub></label>
+           <input type="radio" value="alto" id="alto" name="plan">
+         </li>
+         <li>
+           <label for="pro">Plan Pro Adicional</label>
+            <input type="checkbox" id="pro" name="pro">
+         </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Tarjeta de Credito</legend>
+        <label for="cardNumber">Numero de Tarjeta de Credito</label>
+        <input type="number" id="cardNumber" name="cardNumber">
+        <label for="cvc">CVC</label>
+        <input type="number" id="cvc" maxlength="3" name="cvc">
+        <label for="fechaExpiracion">Fecha Expiracion</label>
+        <input type="date" id="fechaExpiracion" name="fechaExpiracion">
+        <label for="Direccion">Dirección</label>
+        <input type="text" id="Direccion" name="Direccion">
+      </fieldset>
+
+      
+      
+      <button>Confirmar</button>
+    </form>
+  </body>
+</html>
