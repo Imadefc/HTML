@@ -32,21 +32,14 @@
         <legend>Elige tu plan</legend>
         <ul >
          <li>
-           <label for="gratuito">Gratuito <sup>0€</sup>/<sub>mes</sub></label>
-           <input type="radio" value="gratuito" id="gratuito" name="plan">
-          </li>
-         <li>
-            <label for="basico">Basico <sup>15€</sup>/<sub>mes</sub></label>
-            <input type="radio" value="basico" id="basico" name="plan">
-          </li>
-          <li>
-            <label for="medio">Medio <sup>30€</sup>/<sub>mes</sub></label>
-           <input type="radio" value="medio" id="medio" name="plan">
+          <select name="plan" id="plan">
+            <option value="gratuito">Gratuito 0€/mes</option>
+            <option value="basico">Basico 15€/mes</option>
+            <option value="medio">Medio 30€/mes</option>
+            <option value="avanzado">Avanzado 45€/mes</option>
+          </select>
          </li>
-          <li>
-            <label for="alto">Alto <sup>45€</sup>/<sub>mes</sub></label>
-           <input type="radio" value="alto" id="alto" name="plan">
-         </li>
+          
          <li>
            <label for="pro">Plan Pro Adicional</label>
             <input type="checkbox" id="pro" name="pro">
